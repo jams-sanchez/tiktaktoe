@@ -1,10 +1,10 @@
 # joueurs
-joueur_1= "X"
-joueur_2= "O"
+joueur_1= " X "
+joueur_2= " O "
 symbole = ""
 
 # tableau
-board = [["_", "_", "_"], ["_", "_", "_"], ["_", "_", "_"]]
+board = [[" - ", " - ", " - "], [" - ", " - ", " - "], [" - ", " - ", " - "]]
 ligne1 = board[0]
 ligne2 = board[1]
 ligne3 = board[2]
@@ -23,7 +23,7 @@ def efface():
     global ligne2
     global ligne3
     global board
-    board = [["_", "_", "_"], ["_", "_", "_"], ["_", "_", "_"]]
+    board = [[" - ", " - ", " - "], [" - ", " - ", " - "], [" - ", " - ", " - "]]
     ligne1 = board[0]
     ligne2 = board[1]
     ligne3 = board[2]
@@ -52,9 +52,9 @@ def relancer_partie():
 # Vérifie si un joueur a une ligne gagnante OU si la partie est égalité
 def verifie():
     # Joueur 1 - vérification horizontale
-    if board[0] == ["X", "X", "X"] \
-    or board[1] == ["X", "X", "X"] \
-    or board[2] == ["X", "X", "X"]:
+    if board[0] == [" X ", " X ", " X "] \
+    or board[1] == [" X ", " X ", " X "] \
+    or board[2] == [" X ", " X ", " X "]:
         print("HOORAY!")
         print("Joueur 1 gagne !")
         return True
@@ -72,9 +72,9 @@ def verifie():
         print("Joueur 1 gagne !")
         return True
     # Joueur 2 - vérification horizontale
-    if board[0] == ["O", "O", "O"] \
-    or board[1] == ["O", "O", "O"] \
-    or board[2] == ["O", "O", "O"]:
+    if board[0] == [" O ", " O ", " O "] \
+    or board[1] == [" O ", " O ", " O "] \
+    or board[2] == [" O ", " O ", " O "]:
         print("HOORAY!")
         print("Joueur 2 gagne !")
         return True
@@ -140,7 +140,7 @@ def actions():
     # Détermine une action en ligne 1 
     # ET une erreur si l'emplacement est déjà occupé par l'adversaire
     if action_1 == 1:
-        if ligne1[action_2 - 1] == "_":
+        if ligne1[action_2 - 1] == " - ":
             ligne1[action_2 - 1] = symbole
         else:
             print()
@@ -151,7 +151,7 @@ def actions():
     # Détermine une action en ligne 2 
     # ET une erreur si l'emplacement est déjà occupé par l'adversaire
     elif action_1 == 2:
-        if ligne2[action_2 - 1] == "_":
+        if ligne2[action_2 - 1] == " - ":
             ligne2[action_2 - 1] = symbole
         else:
             print()
@@ -162,7 +162,7 @@ def actions():
     # Détermine une action en ligne 3 
     # ET une erreur si l'emplacement est déjà occupé par l'adversaire
     elif action_1 == 3:
-        if ligne3[action_2 - 1] == "_":
+        if ligne3[action_2 - 1] == " - ":
             ligne3[action_2 - 1] = symbole
         else:
             print()
