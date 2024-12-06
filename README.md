@@ -3,7 +3,7 @@
 
 ## À propos du projet
 <p> J'ai eu l'occasion de créer ce mini jeu lors d'un projet de groupe où nous avions décidé de créer chacun notre version.</p>
-<p> Dans cette version, vous devez être 2 joueurs. Bonne Chance ! </p>
+<p> Vous devez être 2 joueurs. Bonne Chance et que le meilleur gagne ! </p>
 <p><i>-- noter que ceci est mon premier projet python --</i></p>
 
 <h2 align="right"> Règles du jeu:</h2>
