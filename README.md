@@ -13,7 +13,7 @@ quadrillage.</p>
 <p align="right">- Le gagnant est celui qui parvient à aligner 3 symboles identiques
 horizontalement, verticalement ou en diagonale.</p>
 
-## Projet d'Améliorations
+## Projets d'Améliorations
 
 - Implémentation d'un bot pour un joueur solo
 - Implémentation de plusieurs mini jeu
